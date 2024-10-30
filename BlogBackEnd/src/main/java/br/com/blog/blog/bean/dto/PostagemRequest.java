@@ -7,6 +7,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.time.LocalDateTime;
+
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
@@ -15,5 +17,6 @@ import lombok.NoArgsConstructor;
 public class PostagemRequest {
     private String postagem;
     private String usuarioDono;
+    private LocalDateTime dataCriacao;
     private Usuario fkUsuarioID;
 }
