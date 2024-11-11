@@ -4,6 +4,7 @@ import br.com.blog.blog.bean.dto.PostagemRequest;
 import br.com.blog.blog.bean.dto.PostagemResponse;
 import br.com.blog.blog.bean.entity.Postagem;
 import br.com.blog.blog.bean.entity.Usuario;
+import br.com.blog.blog.exception.NotFoundException;
 import br.com.blog.blog.mapper.GennericMapper;
 import br.com.blog.blog.repository.PostagemRepository;
 import br.com.blog.blog.repository.UsuarioRepository;
@@ -44,7 +45,7 @@ public class PostagemServiceImpl implements PostagemService {
 
     @Override
     public PostagemResponse inserirPostagem(PostagemRequest postagemRequest,Long id) throws Exception {
-        Usuario usuario = usuarioRepository.findById(id).orElseThrow(() -> new Exception("NÃO FOI POSSIVEL LOCALIZAR NENHUM USUARIO"));
+        Usuario usuario = usuarioRepository.findById(id).orElseThrow(NotFoundException::new);
         Postagem postagem = new Postagem();
         postagem.setPostagem(postagemRequest.getPostagem());
         postagem.setFkUsuarioID(usuario);
