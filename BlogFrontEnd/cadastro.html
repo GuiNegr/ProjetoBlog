@@ -27,7 +27,7 @@
         </div>
 
         <div class="div-form-cadastro">
-            <form>
+            <form  onsubmit="cadastroUser(event)">
                <div id="divinput">
                 <label for="nome">NOME DE USUARIO</label>
                 <input type="text" name="nome" id="nome" placeholder="digite um nome de usuario">
@@ -45,10 +45,11 @@
     
                
                <div id="divinput">
-                <input type="password" name="senha", id="" placeholder="confirme sua senha">
+                <input type="password" name="senha", id="senhaRepetida" placeholder="confirme sua senha">
                </div>
+               <span id="span"><p id="spanP"></p></span>
 
-               <button type="submit" onclick="teste()">CADASTRAR</button>
+               <button type="submit">CADASTRAR</button>
             </form>
         </div>
 
@@ -65,5 +66,6 @@
            </nav>
         </div>
        </footer>
+       <script src="js/Cadastro.js"></script>
 </body>
 </html>
