@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/Login.css">
+</head>
+<body>
+    <header>
+        <div class="container-nav">
+            <nav>
+                <ul>
+                    <li><a href="/cadastro">CADASTRAR</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+
+        <div class="texto-main">
+        <h1>NOBADY'S CARE</h1>
+        <p>ENTRE POR SUA CONTA E RISCO</p>
+        </div>
+
+        <div class="div-form-cadastro">
+            <form  onsubmit="logarUser(event)">
+
+               <div id="divinput">
+                <label for="email">E-MAIL</label>
+                <input type="email" name="email" id="email" placeholder="digite seu email">
+               </div>
+    
+               <div id="divinput">
+                <label for="senha">SENHA</label>
+                <input type="password" name="senha", id="senha" placeholder="digite sua senha">
+               </div>
+               <span id="span"><p id="spanP"></p></span>
+
+               <button type="submit">LOGAR</button>
+            </form>
+        </div>
+
+    </main>
+
+
+    <footer>
+        <div class="div-footer">
+           <nav>
+               <ul>
+                   <li><a href="https://github.com/GuiNegr" target="_blank"><img src="img/github.png" alt="Github"></a> </li>
+                   <li><a href="https://www.linkedin.com/in/guilherme-da-silva-negreiros-01b23a1b4/" target="_blank" ><img src="img/logotipo-do-linkedin.png" alt="linkedin"></a></li>
+               </ul>
+           </nav>
+        </div>
+       </footer>
+       <script src="js/Login.js"></script>
+</body>
+</html>

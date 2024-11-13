@@ -1,10 +1,11 @@
-package br.com.blog.blog.service.implementações;
+package br.com.blog.blog.service.impl;
 
 import br.com.blog.blog.bean.dto.UsuarioRequest;
 import br.com.blog.blog.bean.dto.UsuarioResponse;
 import br.com.blog.blog.bean.entity.Usuario;
 import br.com.blog.blog.exception.AlreadyExistException;
 import br.com.blog.blog.exception.NotFoundException;
+import br.com.blog.blog.exception.PasswordDonstMatch;
 import br.com.blog.blog.repository.UsuarioRepository;
 import br.com.blog.blog.service.UsuarioService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -42,7 +43,8 @@ public class UsuarioServiceImpl implements UsuarioService {
         Usuario usuarioCheck = usuarioRepository.findByEmail(usuarioRequest.email()).orElseThrow(() -> new NotFoundException());
         if(passwordEncoder.matches(usuarioRequest.senha(),usuarioCheck.getSenha())){
             return new UsuarioResponse(usuarioCheck);
+        }else {
+            throw new PasswordDonstMatch();
         }
-        return null;
     }
 }

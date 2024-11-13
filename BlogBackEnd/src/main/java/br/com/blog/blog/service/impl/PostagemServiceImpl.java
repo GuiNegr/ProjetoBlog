@@ -1,4 +1,4 @@
-package br.com.blog.blog.service.implementações;
+package br.com.blog.blog.service.impl;
 
 import br.com.blog.blog.bean.dto.PostagemRequest;
 import br.com.blog.blog.bean.dto.PostagemResponse;
