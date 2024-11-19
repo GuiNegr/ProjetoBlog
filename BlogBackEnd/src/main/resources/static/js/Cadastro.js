@@ -36,7 +36,7 @@ function checkSenha(nomeUsuario,email,senha,senhaRepetida){
 async function salvarCad(nomeUsuario,email,senha){
     const novoUser = new User (nomeUsuario,email,senha)
     console.log(novoUser)
-    const url = 'http://localhost:8015/usuario'
+    const url = 'http://localhost:8000/usuario'
 
     try{
         const response = await fetch(url,{
@@ -50,9 +50,9 @@ async function salvarCad(nomeUsuario,email,senha){
         if (!response.ok) {
             const errorText = await response.text();
             document.getElementById("spanP").innerHTML = errorText;
-        } 
+        }
         window.location.href = "index.html";
-        
+
     }catch(Error){
         alert(Error)
     }

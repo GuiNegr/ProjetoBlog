@@ -21,7 +21,7 @@ async function verificabanco(email,senha){
 
     const loginDto = new UserDTO(email,senha)
 
-    const url = 'http://localhost:8015/usuario/login'
+    const url = 'http://localhost:8000/usuario/login'
 
     try{
         const response = await fetch(url,{
@@ -37,7 +37,7 @@ async function verificabanco(email,senha){
             document.getElementById("spanP").innerHTML = errorText;
         }else{
             const userLogado = await response.json()
-            sessionStorage.setItem("usuarioLogado",userLogado)
+            sessionStorage.setItem("usuarioLogado", JSON.stringify(userLogado));
             window.location.href = "feed.html"
         }
     }catch(Error){

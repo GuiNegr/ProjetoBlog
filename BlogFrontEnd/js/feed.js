@@ -19,3 +19,14 @@ function logout(){
     sessionStorage.removeItem("usuarioLogado")
     window.location.href = "/cadastro"
 }
+
+
+window.addEventListener("message", function(event) {
+
+    if (event.data === "fecharIframe") {
+        const iframe = document.getElementById("iframeFeed");
+        iframe.style.display = "none"; 
+        const navBtn = document.getElementById("nav-button");
+        navBtn.innerHTML = "ENVIAR PUBLICAÇÃO"; 
+    }
+});
