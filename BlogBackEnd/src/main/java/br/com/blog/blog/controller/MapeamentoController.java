@@ -22,4 +22,8 @@ public class MapeamentoController {
         return "cadastro.html";
     }
 
+    @GetMapping("/feed")
+    public String feed(){
+        return "feed.html";
+    }
 }
