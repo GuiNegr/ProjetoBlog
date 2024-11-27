@@ -36,7 +36,9 @@ async function verificabanco(email,senha){
             const errorText = await response.text();
             document.getElementById("spanP").innerHTML = errorText;
         }else{
-            alert("logado")
+            const userLogado = await response.json()
+            sessionStorage.setItem("usuarioLogado",userLogado)
+            window.location.href = "feed.html"
         }
     }catch(Error){
         console.log(Error)

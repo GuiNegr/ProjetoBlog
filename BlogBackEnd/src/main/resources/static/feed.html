@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/styleFeed.css">
+    <link rel="icon" type="image/x-icon" href="/img/mobile-marketing-animate.svg">
+</head>
+<body>
+
+    <header>
+            <div class="container-nav">
+                <nav>
+                    <ul>
+                        <li><button class="nav-button" id="nav-button-logout" onclick="logout()">LOGOUT</button></li>
+                        <li><button class="nav-button" id="nav-button" onclick="exibirIframe()">ENVIAR PUBLICAÇÃO</button></li>
+                    </ul>
+                </nav>
+            </div>
+    </header>
+    <main>
+       <div class="mainDiv">
+            
+                    <iframe src="enviarPostagem.html" frameborder="0" class="iframeFeed" id = "iframeFeed">
+                        
+                    </iframe>
+                    
+                    <div id="comentariosContainer" class="comentariosContainer">
+                        <div class="divComentario">
+                          
+                        </div>
+                    </div>
+        </div>
+    </main>
+    <footer>
+     <div class="div-footer">
+        <nav>
+            <ul>
+                <li><a href="https://github.com/GuiNegr" target="_blank"><img src="img/github.png" alt="Github"></a> </li>
+                <li><a href="https://www.linkedin.com/in/guilherme-da-silva-negreiros-01b23a1b4/" target="_blank" ><img src="img/logotipo-do-linkedin.png" alt="linkedin"></a></li>
+            </ul>
+        </nav>
+     </div>
+    </footer>
+
+    <script src="/js/feed.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    font-style: normal;
+    margin: 0;
+}
+
+body {
+    overflow-y: auto;
+    display: grid;
+    flex-direction: row;
+    align-items: center;
+}
+/*
+
+CSS DO INDEX HEADER/NAV
+
+*/
+.container-nav{
+    background-color: rgb(163, 150, 240);
+    display: flex;
+    justify-content: right;
+}
+
+.container-nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container-nav li{
+    float: left;
+}
+  
+.container-nav a{
+    display: block;
+    text-decoration: none;
+    padding: 8px;
+    color: rgb(78, 50, 233);
+}
+
+.container-nav a:hover,
+.nav-button:hover {
+    background-color: rgb(126, 105, 245);
+    color: white;
+}
+
+.nav-button {
+    display: block;
+    padding: 8px;
+    background-color: transparent;
+    border: none;
+    color: rgb(78, 50, 233);
+    cursor: pointer;
+    font: inherit; 
+    text-align: left;
+}
+
+
+
+
+/*
+
+MAIN DIV
+
+*/
+
+.mainDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.main-div-texto{
+    font-weight: 800;
+}
+
+.main-div-img{
+    width: 25vw;
+}
+
+/*
+
+DIV FOOTER
+
+*/
+
+.div-footer{
+    background-color: rgb(163, 150, 240);
+    display: inline;
+    position: absolute;
+    bottom: 0;
+    width: 100%;    
+    position: fixed;
+    left: 0;
+}
+
+
+.div-footer ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.div-footer li{
+    float: left;
+}
+  
+.div-footer a{
+    display: inline;
+    text-decoration: none;
+    color: rgb(78, 50, 233);
+}
+
+.div-footer img{
+    margin-top: 3px;
+    padding: 4px;
+    width: 2vw;
+}
+
+.div-footer img:hover{
+    margin-top: 3px;
+    padding: 4px;
+    width: 3vw;
+}
+
+
+.iframeFeed{
+    display: none;
+    width: 1010px;
+    height: 900px;
+    overflow-y: auto; 
+    border: none;
+}
+
+.divComentario{
+    display: inline;
+    height: 200px;
+    width: 500px;
+    margin-top: 20px;
+    background-color: rgb(163, 150, 240);
+    border: 3px solid rgb(78, 50, 233);
+    color: rgb(255, 255, 255);
+    border-radius: 0;
+}
+
+.loginEData{
+    font-size: larger;
+    font-style: bold;
+    margin: 3px 3px 3px 3px;
+    padding: 5px;
+}
+
+.divComentario{
+    font-size: larger;
+    font-style: bold;
+    margin: 3px 3px 3px 3px;
+    padding: 5px;
+}
+
+.comentariosContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
