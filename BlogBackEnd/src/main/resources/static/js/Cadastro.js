@@ -50,8 +50,10 @@ async function salvarCad(nomeUsuario,email,senha){
         if (!response.ok) {
             const errorText = await response.text();
             document.getElementById("spanP").innerHTML = errorText;
+        }else{
+            window.location.href = "index.html";
         }
-        window.location.href = "index.html";
+
 
     }catch(Error){
         alert(Error)

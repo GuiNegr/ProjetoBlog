@@ -1,7 +1,10 @@
 async function publicar(event){
     event.preventDefault();
+    console.log("fui assionado")
     const publicacao = document.getElementById("publicacao").value;
+    console.log(publicacao)
     const usuarioLogado = JSON.parse(sessionStorage.getItem("usuarioLogado"));
+    console.log(usuarioLogado)
     try{
 
         const publicacaoJson =
@@ -21,7 +24,6 @@ async function publicar(event){
             const errorText = await response.text();
             document.getElementById("spanP").innerHTML = errorText;
         }else{
-            sessionStorage.setItem("usuarioLogado",usuarioLogado)
             document.getElementById("publicacao").value = "";
             window.parent.postMessage("fecharIframe", "*");
         }
