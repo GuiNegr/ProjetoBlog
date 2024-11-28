@@ -1,0 +1,116 @@
+body{
+    background-color: rgb(34, 34, 34);
+    color: white;
+}
+
+
+.responsivo{
+    max-width: 1920px;
+    margin: 0 auto;
+    width: 80%;
+
+}
+
+
+.divMain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.divEnvioPost{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: start;
+    flex-direction: column;
+    font-size: 26px;
+    font-weight: 800;
+    width: 60%;
+}
+
+.divEnvioPost div{
+    color: #D42EF0;
+}
+
+.divEnvioPost textarea{
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 700;
+    width: 100%;
+    background: linear-gradient(135deg, rgba(212, 46, 240, 0.6), rgba(246, 245, 245, 0.2)); 
+    color: #A4F70A;
+}
+
+.divEnvioPost button{
+    transition: color 0.6s ease-in-out;
+}
+
+.divEnvioPost button:hover{
+    background: linear-gradient(120deg, #D42EF0, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.divPosts{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    align-self: left;
+    align-items: start;
+    flex-direction: column;
+    gap: 16px;
+    border-bottom: 3px solid #d9d9d9 ; 
+}
+
+.divPosts h1{
+    margin: 2px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.divPosts h2{
+    margin: 2px;
+    font-size: 20px;
+    font-weight: medium;
+}
+
+.divPosts p{
+    width: 45ch;
+    margin: 5px;
+}
+
+.container-nav{
+    background: linear-gradient(120deg, #2e0161, #761a87);
+    display: flex;
+    justify-content: right;
+}
+
+.container-nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container-nav li{
+    float: left;
+}
+  
+
+.container-nav a:hover,
+.nav-button:hover {
+    color: #A4F70A;
+}
+
+.nav-button {
+    display: block;
+    padding: 8px;
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    text-align: left;
+}

@@ -3,48 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="css/styleFeed.css">
+    <title>Feed</title>
+           <!--Para remover os styles padrão do html-->
+           <link rel="stylesheet" href="styleReset.css">
+           <script src="https://cdn.tailwindcss.com"></script>
+           
+           <!--Import de fonte do Google-->
+           <link rel="preconnect" href="https://fonts.googleapis.com">
+           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+           <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+   
+   
+           <link rel="preconnect" href="https://fonts.googleapis.com">
+           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+           <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+   
+
+           <link rel="stylesheet" href="./css/feedStyle.css">
     <link rel="icon" type="image/x-icon" href="/img/mobile-marketing-animate.svg">
 </head>
 <body>
 
-    <header>
-            <div class="container-nav">
-                <nav>
-                    <ul>
-                        <li><button class="nav-button" id="nav-button-logout" onclick="logout()">LOGOUT</button></li>
-                        <li><button class="nav-button" id="nav-button" onclick="exibirIframe()">ENVIAR PUBLICAÇÃO</button></li>
-                    </ul>
-                </nav>
-            </div>
-    </header>
-    <main>
-       <div class="mainDiv">
-            
-                    <iframe src="enviarPostagem.html" frameborder="0" class="iframeFeed" id = "iframeFeed">
-                        
-                    </iframe>
-                    
-                    <div id="comentariosContainer" class="comentariosContainer">
-                        <div class="divComentario">
-                          
-                        </div>
-                    </div>
+<header>
+        <div class="container-nav">
+            <nav>
+                <ul>
+                    <li><button class="nav-button" id="nav-button-logout" onclick="logout()">LOGOUT</button></li>
+                </ul>
+            </nav>
         </div>
+</header>
+
+
+    <main>
+
+        <div class="divMain responsivo">
+
+            <div class="divEnvioPost">
+                <h1>
+                    ESCREVA OQUE ESTÁ <div>PENSANDO</div>
+                </h1>
+
+                <textarea name="" id="">
+                        
+                </textarea>
+
+                <button type="button">Publicar</button>
+            </div>
+
+            
+            <div id="comentariosContainer" class="comentariosContainer">
+            </div>
+
+        <script src="js/feed.js"></script>
+        <script src="js/enviarPostagem.js"></script>
     </main>
-    <footer>
-     <div class="div-footer">
-        <nav>
-            <ul>
-                <li><a href="https://github.com/GuiNegr" target="_blank"><img src="img/github.png" alt="Github"></a> </li>
-                <li><a href="https://www.linkedin.com/in/guilherme-da-silva-negreiros-01b23a1b4/" target="_blank" ><img src="img/logotipo-do-linkedin.png" alt="linkedin"></a></li>
-            </ul>
-        </nav>
-     </div>
-    </footer>
-
-    <script src="/js/feed.js"></script>
-
 </body>
 </html>
