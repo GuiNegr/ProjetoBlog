@@ -1,0 +1,83 @@
+body{
+    background-color: rgb(34, 34, 34);
+    color: white;
+    font-family: "Roboto";
+}
+
+.responsivo{
+    max-width: 1920px;
+    margin: auto;
+    width: 90%;
+}
+
+
+.divPai{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    height: 90dvh;
+}
+
+.divUpLoogotipo{
+    width: 40dvh;
+    margin: 0 auto;
+}
+
+.divUpLoogotipo img{
+   width: 100%;
+   height: auto;
+}
+
+.divUpText{
+    text-align: center;
+    gap: 0.3rem;
+    
+}
+
+.divUpText h1{
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 130%;
+}
+
+.divUpText p{
+    font-size: 32px;
+    font-weight: 400;
+    color: #BE00FA;
+    line-height: 130%;
+}
+
+.divDown{
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-weight: 700;
+    justify-content: space-around;
+    line-height: 100%;
+}
+
+.divDown a{
+    transition: color 0.3s ease-in-out;
+}
+
+.divDown a:hover{
+    color: #A4F70A
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    font-weight: 500;
+    gap: 8rem;
+}
+
+nav ul li a:hover{
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover{
+    color: #BE00FA;
+}

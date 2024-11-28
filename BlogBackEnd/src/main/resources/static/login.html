@@ -3,62 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/Login.css">
+    <title>Home</title>
+
+        <!--Para remover os styles padrão do html-->
+        <link rel="stylesheet" href="styleReset.css">
+        <script src="https://cdn.tailwindcss.com"></script>
+        
+        <!--Import de fonte do Google-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="./css/loginStyle.css">
+
     <link rel="icon" type="image/x-icon" href="/img/mobile-marketing-animate.svg">
 </head>
 <body>
-    <header>
-        <div class="container-nav">
-            <nav>
-                <ul>
-                    <li><a href="/">HOME</a></li>
-                    <li><a href="/cadastro">CADASTRAR</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
 
-    <main>
+    <main class="responsivo">
+        
+    <div class="divMain">
 
-
-        <div class="texto-main">
-        <h1>NOBADY'S CARE</h1>
-        <p>ENTRE POR SUA CONTA E RISCO</p>
+        <div class="sideDivLeft sidesDiv">
+            <h1>Faça seu Login</h1>
+            <p>aproveite sua estadia</p>
         </div>
 
-        <div class="div-form-cadastro">
+
+        <div class="sideDivRigth sidesDiv">
             <form  onsubmit="logarUser(event)">
+                
+                <div class="divInput">
+                <label for="email" >E-MAIL</label>
+                 <input type="email" name="email" id="email" placeholder="Digite seu email">
+                </div>
+                
+                <div class="divInput">
+                    <label for="senha">SENHA</label>
+                    <input type="password" name="senha", id="senha" placeholder="Digite sua senha">
+                </div>
 
-               <div id="divinput">
-                <label for="email">E-MAIL</label>
-                <input type="email" name="email" id="email" placeholder="digite seu email">
-               </div>
-    
-               <div id="divinput">
-                <label for="senha">SENHA</label>
-                <input type="password" name="senha", id="senha" placeholder="digite sua senha">
-               </div>
-               <span id="span"><p id="spanP"></p></span>
+                <span id="span"><p id="spanP"></p></span>
+               
+                <div class="divBottons">
+                    <button type="submit">LOGAR</button>
+                    <a href="/">VOLTAR</a>
+                </div>
 
-               <button type="submit">LOGAR</button>
-            </form>
+             </form>
         </div>
 
+    </div>
     </main>
 
+    <script src="js/Login.js"></script>
+</body>
+</html>
 
-    <footer>
-        <div class="div-footer">
-           <nav>
-               <ul>
-                   <li><a href="https://github.com/GuiNegr" target="_blank"><img src="img/github.png" alt="Github"></a> </li>
-                   <li><a href="https://www.linkedin.com/in/guilherme-da-silva-negreiros-01b23a1b4/" target="_blank" ><img src="img/logotipo-do-linkedin.png" alt="linkedin"></a></li>
-               </ul>
-           </nav>
-        </div>
-       </footer>
-       <script src="js/Login.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>
