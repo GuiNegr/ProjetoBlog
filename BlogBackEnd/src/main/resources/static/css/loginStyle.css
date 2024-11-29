@@ -1,0 +1,110 @@
+body{
+    background-color: rgb(34, 34, 34);
+    color: white;
+}
+
+
+.responsivo{
+    max-width: 1920px;
+    margin: 0 auto;
+    width: 80%;
+
+}
+
+
+.divMain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+}
+
+.sidesDiv{
+    display: grid;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: left;
+}
+
+.sideDivLeft{
+   text-align: start;
+   
+}
+
+.sideDivLeft h1{
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 48px;
+}
+
+.sideDivLeft p{
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    line-height: 130%;
+}
+
+.sideDivRigth{
+    font-family: "Roboto";
+    font-size: 20px;
+    gap: 24px;
+    font-weight: bold;
+}
+
+.divInput{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    gap: 0.5rem;
+}
+
+.divInput input{
+    border-radius: 6px;
+    font-family: "Roboto";
+    color: black;
+    border: 2px solid rgb(34, 34, 34);
+    padding: 4px;
+    margin-top: 0;
+    margin-bottom: 5px;
+    box-decoration-break: unset;
+    font-size: 16px;
+}
+.divInput input:focus{
+    border-color: #A4F70A;
+    outline: none;
+}
+
+.divInput label{
+    font-size: 25px;
+    font-weight: 450;
+    line-height: 130%;
+}
+
+.divBottons{
+    display: flex;
+    text-align: start;
+    font-size: 24px;
+    justify-content: space-between;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    gap: 1rem;
+}
+
+.divBottons button{
+    transition: color 0.3s ease-in-out;
+}
+
+.divBottons button:hover{
+    color: #A4F70A
+}
+
+.divBottons a{
+    transition: color 0.3s ease-in-out;
+}
+
+.divBottons a:hover{
+    color: #8B3DA2;
+}
